@@ -8,7 +8,7 @@ export default function Listing({ items}: TList ) {
     console.log(items)
     
   // eslint-disable-next-line prefer-const
-  result = items.map((item, i) => {return (
+  result = items.map((item) => {return (
         <div key={item.listing_id} className="item">
                 <div className="item-image">
                     <a href={item.url}>
